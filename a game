@@ -1,0 +1,66 @@
+// My frist project call oẳn tù tì only for vnese
+using System;
+
+namespace Prow
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(" Chao mung ban den voi tro choi oan tu ti");
+            int nguoi;
+            string strnguoi;
+            int may;
+            Console.WriteLine("Keo la 1, Bua la 2, Bao la 3");
+            Console.WriteLine(" Nhap so ban chon:");
+            strnguoi = Console.ReadLine();
+            nguoi = int.Parse(strnguoi);
+            Random rd = new Random();
+            may = rd.Next(1, 3);
+            Console.WriteLine(" May chon {0}", may);
+            if (may == nguoi)
+            {
+                Console.WriteLine(" Hoa ");
+            }
+            else if (may == 1)
+            {
+                if (nguoi == 2)
+                {
+                    Console.WriteLine(" Ban ra bua va may ra keo");
+                    Console.WriteLine(" Ban da thang!");
+                }
+                else
+                {
+                    Console.WriteLine(" Ban ra bao va may ra keo");
+                    Console.WriteLine(" Ban da thua!");
+                }
+            }
+            else if(may ==2)
+            {
+                if (nguoi == 3)
+                {
+                    Console.WriteLine(" Ban ra bao va may ra bua");
+                    Console.WriteLine(" Ban thang");
+                }
+                else
+                {
+                    Console.WriteLine(" Ban ra keo va may ra bua");
+                    Console.WriteLine(" Ban thua");
+                }
+              }
+            else if(may==3)
+            {
+                if (nguoi == 1)
+                {
+                    Console.WriteLine(" May ra bao va ban ra keo");
+                    Console.WriteLine(" Ban thang");
+                }
+                else;
+                {
+                    Console.WriteLine(" May ra bao va ban ra bua");
+                    Console.WriteLine(" Ban thua");
+                }
+            }
+        }
+    }
+}
